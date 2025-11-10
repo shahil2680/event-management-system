@@ -67,7 +67,7 @@ exports.registerForEvent = async (req, res) => {
       }
 
       try {
-        const frontendBase = process.env.FRONTEND_URL || 'http://localhost:5173';
+        const frontendBase = process.env.FRONTEND_URL || 'https://campuseventhub-1.onrender.com';
         
         // Validate required data for Stripe session
         if (!event.title || !event._id) {
