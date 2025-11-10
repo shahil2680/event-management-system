@@ -50,7 +50,7 @@ exports.sendTicketApprovalEmail = async (user, event, registration) => {
       return { success: false, message: 'Email service not configured' };
     }
 
-    const ticketDownloadLink = `${process.env.FRONTEND_URL || 'http://localhost:3000'}/student-dashboard`;
+    const ticketDownloadLink = `${process.env.FRONTEND_URL || 'https://campuseventhub-1.onrender.com'}/student-dashboard`;
 
 
     const mailOptions = {
