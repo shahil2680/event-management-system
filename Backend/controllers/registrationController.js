@@ -656,7 +656,7 @@ exports.exportRegistrationsToExcel = async (req, res) => {
       'Registration Status': reg.status.toUpperCase(),
       'Ticket Available': reg.status === 'approved' ? 'YES' : 'NO',
       'Ticket Download Link': reg.status === 'approved' 
-        ? `${process.env.FRONTEND_URL || 'http://localhost:5173'}/api/tickets/${reg._id}`
+        ? `${process.env.FRONTEND_URL || 'https://campuseventhub-1.onrender.com'}/api/tickets/${reg._id}`
         : 'N/A',
       'Registration Date': new Date(reg.timestamp).toLocaleDateString('en-US'),
       'Registration Time': new Date(reg.timestamp).toLocaleTimeString('en-US'),
