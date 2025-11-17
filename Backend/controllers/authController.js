@@ -303,7 +303,7 @@ exports.forgotPassword = async (req, res) => {
     await user.save();
 
     // Create reset link - Use FRONTEND_URL from env or fallback
-    const frontendUrl = process.env.FRONTEND_URL || 'https://campuseventhub-1.onrender.com';
+    const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
     const resetLink = `${frontendUrl}/reset-password?token=${resetToken}`;
 
     // Send beautiful password reset email
