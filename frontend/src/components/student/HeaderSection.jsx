@@ -23,7 +23,7 @@ const HeaderSection = ({
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-white" />
                 </div>
-                <h1 className="text-2xl font-bold text-gray-900">CampusEventHub</h1>
+                <h1 className="text-2xl font-bold text-gray-900">Event management system</h1>
               </div>
             </div>
             

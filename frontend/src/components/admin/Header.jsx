@@ -19,7 +19,7 @@ const Header = ({
                 <Building className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
               </div>
               <div className="min-w-0">
-                <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">CampusEventHub</h1>
+                <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">Event management system</h1>
                 <span className="hidden xs:inline-block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">
                   Admin
                 </span>

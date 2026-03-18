@@ -218,7 +218,7 @@ const StudentDashboard = () => {
   };
 
   const EventCard = ({ event, showRegisterButton = true }) => (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-glow-lg transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-2">
       <div className="relative">
         <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
         <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(event.status)}`}>
@@ -275,12 +275,12 @@ const StudentDashboard = () => {
             <button
               onClick={() => handleRegister(event.id)}
               disabled={userEvents.some(e => e.id === event.id) || event.participants >= event.maxParticipants}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-6 py-2 rounded-xl font-semibold transition-all duration-300 shadow-sm ${
                 userEvents.some(e => e.id === event.id)
-                  ? 'bg-green-100 text-green-700 cursor-not-allowed'
+                  ? 'bg-green-100/80 text-green-700 cursor-not-allowed'
                   : event.participants >= event.maxParticipants
-                  ? 'bg-red-100 text-red-700 cursor-not-allowed'
-                  : 'bg-blue-600 text-white hover:bg-blue-700'
+                  ? 'bg-red-100/80 text-red-700 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-brand-600 to-violet-500 text-white hover:from-brand-500 hover:to-violet-400 hover:shadow-glow transform hover:-translate-y-0.5 active:scale-95'
               }`}
             >
               {userEvents.some(e => e.id === event.id) 
@@ -293,7 +293,7 @@ const StudentDashboard = () => {
           ) : (
             <button
               onClick={() => handleViewDetails(event)}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2"
+              className="px-6 py-2 bg-gradient-to-r from-brand-600 to-violet-500 text-white rounded-xl font-semibold hover:from-brand-500 hover:to-violet-400 transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-glow transform hover:-translate-y-0.5 active:scale-95"
             >
               View Details
             </button>
@@ -305,7 +305,7 @@ const StudentDashboard = () => {
 
   const DashboardStats = () => (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+      <div className="bg-gradient-to-r from-brand-600 to-indigo-600 text-white p-6 rounded-2xl shadow-glow transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-blue-100 text-sm">Registered Events</p>
@@ -315,7 +315,7 @@ const StudentDashboard = () => {
         </div>
       </div>
       
-      <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-xl">
+      <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-green-100 text-sm">Completed Events</p>
@@ -325,7 +325,7 @@ const StudentDashboard = () => {
         </div>
       </div>
       
-      <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-xl">
+      <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-purple-100 text-sm">Available Events</p>

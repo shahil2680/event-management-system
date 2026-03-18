@@ -687,7 +687,7 @@ const AdminDashboard = () => {
       <>
         {/* Stats Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-gradient-to-r from-brand-600 to-indigo-600 text-white p-4 sm:p-6 rounded-2xl shadow-glow hover:shadow-glow-lg transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-blue-100 text-sm">Total Events</p>
@@ -698,7 +698,7 @@ const AdminDashboard = () => {
         </div>
       </div>
       
-          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-green-100 text-sm">Active Users</p>
@@ -709,7 +709,7 @@ const AdminDashboard = () => {
         </div>
       </div>
       
-          <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-purple-100 text-sm">Total Registrations</p>
@@ -721,7 +721,7 @@ const AdminDashboard = () => {
         </div>
       </div>
       
-          <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-orange-100 text-sm">Average Participants</p>
@@ -1273,7 +1273,7 @@ const AdminDashboard = () => {
                   <Building className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div className="min-w-0">
-                  <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">CampusEventHub</h1>
+                  <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">Event management system</h1>
                   <span className="hidden xs:inline-block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">
                     Admin
                   </span>

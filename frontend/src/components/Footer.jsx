@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Github, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Campus EventHub
+                Event management system
               </h3>
             </div>
             <p className="text-gray-600 text-xs max-w-xs mx-auto md:mx-0">
@@ -27,24 +27,24 @@ const Footer = () => {
           {/* Middle Section - Contact Info */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-700">
             <a 
-              href="mailto:support@campuseventhub.com"
+              href="mailto:info@eventmanagement.com"
               className="flex items-center hover:text-blue-600 transition-colors"
             >
               <Mail className="w-3.5 h-3.5 mr-1.5" />
-              support@campuseventhub.com
+              info@eventmanagement.com
             </a>
             <span className="hidden sm:inline text-gray-300">|</span>
             <a 
-              href="tel:+15551234567"
+              href="tel:+919876543210"
               className="flex items-center hover:text-blue-600 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 mr-1.5" />
-              +1 (555) 123-4567
+              +91 9876543210
             </a>
             <span className="hidden sm:inline text-gray-300">|</span>
             <div className="flex items-center">
               <MapPin className="w-3.5 h-3.5 mr-1.5" />
-              123 University Ave, CC 12345
+              Bhubaneswar, Odisha
             </div>
           </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
               <Github className="w-4 h-4" />
             </a>
             <a 
-              href="mailto:support@campuseventhub.com" 
+              href="mailto:info@eventmanagement.com" 
               className="w-8 h-8 bg-gray-100 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white text-gray-600 rounded-lg flex items-center justify-center transition-all shadow-sm"
               aria-label="Email"
             >
@@ -72,9 +72,7 @@ const Footer = () => {
         {/* Bottom Copyright */}
         <div className="mt-4 pt-4 border-t border-gray-200 text-center">
           <div className="flex items-center justify-center space-x-1.5 text-gray-600 text-xs">
-            <span>© 2025 Campus EventHub. Made with</span>
-            <Heart className="w-3 h-3 text-red-500 fill-current animate-pulse" />
-            <span>for students.</span>
+            <span>© 2025 Event management system. All rights reserved.</span>
           </div>
         </div>
       </div>

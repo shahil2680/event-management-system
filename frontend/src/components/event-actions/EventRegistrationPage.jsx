@@ -387,7 +387,7 @@ export const EventRegistrationPage = () => {
                 </div>
                 <div className="ml-3">
                   <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                    CampusEventHub
+                    Event management system
                   </span>
                   <div className="text-xs text-gray-500 -mt-1">Connect • Discover • Engage</div>
                 </div>
